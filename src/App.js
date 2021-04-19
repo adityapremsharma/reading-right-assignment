@@ -10,7 +10,7 @@ function App(props) {
   const limit = 10;
   const data = props.images;
   const length = props.images.length;
-  const [name, setName] = useState("");
+  const [name, setName] = useState(null);
   const [showMore, setShowMore] = useState(true);
   const [list, setList] = useState(slice(data, 0, limit));
   const [index, setIndex] = useState(limit);
