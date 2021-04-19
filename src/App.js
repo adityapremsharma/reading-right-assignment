@@ -16,7 +16,6 @@ function App(props) {
   const [index, setIndex] = useState(limit);
 
   const loadMore = () => {
-    console.log(showMore);
     const newIndex = index + limit;
     const newShowMore = newIndex < length - 1;
     const newList = concat(list, slice(data, index, newIndex));
@@ -34,7 +33,6 @@ function App(props) {
   };
 
   useEffect(() => {
-    console.log("hi");
     setList(slice(data, 0, limit));
     setIndex(limit);
     setList(slice(data, 0, limit));
