@@ -42,3 +42,20 @@
     background-color: $black;
   }
 }
+
+@include respond(phone) {
+  .search-bar {
+    form {
+      flex-direction: column;
+      align-items: center;
+      .input-text {
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
+      .btn-primary {
+        width: 50%;
+        margin-left: 0;
+      }
+    }
+  }
+}

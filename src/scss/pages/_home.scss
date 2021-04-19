@@ -1,12 +1,13 @@
 .home {
   background-color: $grey;
   min-height: 100vh;
-  padding: $padding;
+  padding: $padding-big;
   position: relative;
   overflow: hidden;
 
   .display-guide {
     @include absCenter;
+    text-align: center;
     top: 60%;
     color: $grey-sec;
     font-size: 1.5rem;
@@ -36,5 +37,11 @@
       }
       margin-bottom: 2rem;
     }
+  }
+}
+
+@include respond(phone) {
+  .home {
+    padding: $padding-small;
   }
 }
