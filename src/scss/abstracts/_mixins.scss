@@ -45,8 +45,8 @@
       @content;
     } //1200px
   }
-  @if $breakpoint == big-desktop {
-    @media only screen and (min-width: 112.5em) {
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 75em) {
       @content;
     } //1800
   }

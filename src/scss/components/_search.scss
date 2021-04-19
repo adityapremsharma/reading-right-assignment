@@ -16,10 +16,11 @@
   border: none;
   letter-spacing: inherit;
   box-shadow: 1px 1px 5px $grey-sec;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+
   &::placeholder {
     color: $grey-sec;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -32,6 +33,7 @@
   letter-spacing: inherit;
   border: none;
   box-shadow: 1px 1px 5px $grey-sec;
+  font-size: 1.5rem;
 
   i {
     font-size: 2rem;

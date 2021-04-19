@@ -10,15 +10,14 @@ html {
   font-size: 62.5%;
 
   body {
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     line-height: 1.7;
     letter-spacing: 0.2rem;
     box-sizing: border-box;
+  }
 
-    a,
-    li {
-      font-size: 1.2rem;
-    }
+  @include respond(desktop) {
+    font-size: 50%; //1rem = 12, 12/16
   }
 
   @include respond(tab-land) {
@@ -28,10 +27,6 @@ html {
   @include respond(tab-port) {
     font-size: 50%;
   }
-
-  @include respond(big-desktop) {
-    font-size: 75%;
-  }
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Domine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
