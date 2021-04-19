@@ -1,0 +1,40 @@
+.home {
+  background-color: $grey;
+  min-height: 100vh;
+  padding: $padding;
+  position: relative;
+  overflow: hidden;
+
+  .display-guide {
+    @include absCenter;
+    top: 60%;
+    color: $grey-sec;
+    font-size: 1.5rem;
+  }
+
+  .image-display {
+    text-align: center;
+    h3,
+    p {
+      text-align: left;
+    }
+    p {
+      color: $grey-sec;
+      margin-bottom: 2rem;
+    }
+
+    .show-more-text {
+      text-align: center;
+      color: $grey-sec;
+    }
+    .image-container {
+      img {
+        width: 21rem;
+        height: 15rem;
+        margin: 2rem;
+        border-radius: 5px;
+      }
+      margin-bottom: 2rem;
+    }
+  }
+}

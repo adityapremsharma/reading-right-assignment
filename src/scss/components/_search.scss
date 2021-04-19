@@ -1,0 +1,44 @@
+.search-bar {
+  margin-bottom: 2rem;
+  form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.input-text {
+  padding: 2rem;
+  width: 100%;
+  margin-right: 1rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  border: none;
+  letter-spacing: inherit;
+  box-shadow: 1px 1px 5px $grey-sec;
+  font-size: 1.2rem;
+  &::placeholder {
+    color: $grey-sec;
+    font-size: 1.2rem;
+  }
+}
+
+.btn-primary {
+  margin-left: 1rem;
+  padding: 2rem 5rem;
+  border-radius: 5px;
+  background-color: $black;
+  transition: all 0.5s;
+  letter-spacing: inherit;
+  border: none;
+  box-shadow: 1px 1px 5px $grey-sec;
+
+  i {
+    font-size: 2rem;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $black;
+  }
+}
