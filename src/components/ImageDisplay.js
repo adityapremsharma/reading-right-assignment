@@ -19,7 +19,7 @@ export default function ImageDisplay({
           {images.map((image) => (
             <Image
               key={image.id}
-              src={image.urls.raw}
+              src={image.urls.small}
               alt={image.description}
             />
           ))}
