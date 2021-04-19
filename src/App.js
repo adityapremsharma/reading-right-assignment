@@ -27,8 +27,10 @@ function App(props) {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    setName(props.search);
-    props.fetchImages(props.search);
+    if (name !== props.search) {
+      setName(props.search);
+      props.fetchImages(props.search);
+    }
   };
 
   useEffect(() => {
