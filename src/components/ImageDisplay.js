@@ -45,5 +45,21 @@ export default function ImageDisplay({
       </p>
     );
   };
-  return <>{images.length !== 0 ? displayImages() : displayGuide()}</>;
+
+  const displayNotFound = () => {
+    return (
+      <p className="display-guide">
+        Sorry there are no results for {name}. Try something else.
+      </p>
+    );
+  };
+  return (
+    <>
+      {images.length !== 0
+        ? displayImages()
+        : images.length === 0 && name === null
+        ? displayGuide()
+        : displayNotFound()}
+    </>
+  );
 }
