@@ -31,7 +31,7 @@ export default function ImageDisplay({
           </button>
         ) : (
           <p className="show-more-text">
-            That's what we have! Search more to expplore.
+            That's what we have! Search more to explore.
           </p>
         )}
       </div>

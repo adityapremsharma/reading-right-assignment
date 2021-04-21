@@ -33,7 +33,6 @@ function App(props) {
   };
 
   useEffect(() => {
-    setList(slice(data, 0, limit));
     setIndex(limit);
     setList(slice(data, 0, limit));
     setShowMore(true);
